@@ -81,6 +81,9 @@ body {
 nav {
 	position: fixed;
 	width: 85%;
+	background: yellow;
+	padding: 0;
+	border-radius: 10px;
 
 }
 
@@ -96,9 +99,11 @@ nav a {
 	width: 14%;
 }
 
+nav a:hover {
+	color: red;
+}
 
-
-nav, .upperContent, .lowerContent {
+.upperContent, .lowerContent {
 	text-align: center;
 	padding: 3% 0 3% 0;
 }
@@ -141,6 +146,11 @@ h1 {
 	line-height: 1.6;
 	font-size: 16px;
 	
+}
+
+#btnStart:hover {
+	background: black;
+	color: white;
 }
 
 .upperContent {
