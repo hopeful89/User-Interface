@@ -64,3 +64,105 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+body {
+	width: 1024px;
+	margin: 0 8%;
+}
+
+a {
+	text-decoration: none;
+	color: grey;
+	margin: 27px;
+	
+}
+
+nav, .upperContent, .lowerContent {
+	text-align: center;
+	padding: 20px 0 50px 0;
+	margin-right: 12%;
+}
+
+
+.logo {
+	vertical-align: middle;
+	margin-left: 70px;
+}
+
+
+header {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 75px;
+	vertical-align: middle;
+	margin-right: 80px;
+	margin-top: 4%;
+}
+
+.headImg {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#btnStart {
+	width: 150px;
+	background: white;
+	border: 1px solid black;
+	line-height: 1.6;
+	font-size: 16px;
+	
+}
+
+.upperContent {
+	margin-top: 60px;
+	border-top: 1px solid black;
+	text-align: left;
+}
+
+.upperContent div {
+	float: left;
+	width: 49%;
+	margin-bottom: 30px;
+}
+
+.upperContent img {
+	width: 100%;
+	margin-top: 20px;
+
+}
+
+.lowerContent {
+	text-align: left;
+	width: 89%;
+	border-bottom: 1px solid black;
+}
+
+.lowerContent div{
+	float: left;
+	width: 33.33333%;
+	padding-right: 9px;
+}
+
+.contactInfo {
+	text-align: left;
+	padding-top: 40px;
+}
+
+.contactInfo div {
+	margin-bottom: 50px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+  footer {
+	  text-align: center;
+	  width: 90%;
+  }
