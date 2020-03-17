@@ -64,30 +64,49 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+
 body {
-	width: 1024px;
 	margin: 0 8%;
 }
 
-a {
+
+
+.navigation {
+	height: 5%;
+	display: inline-block;
+	min-width: 300px;
+}
+
+nav {
+	position: fixed;
+	width: 85%;
+
+}
+
+nav a {
 	text-decoration: none;
 	color: grey;
-	margin: 27px;
-	
+	text-align: left;
+	display: inline-block;
+	height: 2%;	
 }
+
+.nav-item {
+	width: 14%;
+}
+
+
 
 nav, .upperContent, .lowerContent {
 	text-align: center;
-	padding: 20px 0 50px 0;
-	margin-right: 12%;
+	padding: 3% 0 3% 0;
 }
 
 
 .logo {
-	vertical-align: middle;
-	margin-left: 70px;
+	vertical-align: middle;	
 }
-
 
 header {
 	width: 100%;
@@ -99,13 +118,20 @@ h1 {
 	display: inline-block;
 	font-size: 75px;
 	vertical-align: middle;
-	margin-right: 80px;
+	margin-left: 10%;
 	margin-top: 4%;
 }
 
 .headImg {
+	background: url(../img/header-img.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	vertical-align: middle;
 	display: inline-block;
-	vertical-align: top;
+	border-radius: 50%;
+	height: 500px;
+	width: 500px;
+	margin-left: 13%;
 }
 
 #btnStart {
@@ -118,7 +144,8 @@ h1 {
 }
 
 .upperContent {
-	margin-top: 60px;
+	padding-bottom: 1%;
+	margin-top: 2%;
 	border-top: 1px solid black;
 	text-align: left;
 }
@@ -126,18 +153,22 @@ h1 {
 .upperContent div {
 	float: left;
 	width: 49%;
-	margin-bottom: 30px;
+	margin-bottom: 3%;
 }
 
-.upperContent img {
+.middle-img{
+	background: url(../img/mid-page-accent.jpg);
+	background-size: cover;
+	vertical-align: middle;
+	display: inline-block;
+	height: 200px;
 	width: 100%;
-	margin-top: 20px;
 
 }
 
 .lowerContent {
+	padding-top: 1%
 	text-align: left;
-	width: 89%;
 	border-bottom: 1px solid black;
 }
 
@@ -145,15 +176,16 @@ h1 {
 	float: left;
 	width: 33.33333%;
 	padding-right: 9px;
+	text-align: left;
 }
 
 .contactInfo {
 	text-align: left;
-	padding-top: 40px;
+	padding-top: 4%;
 }
 
 .contactInfo div {
-	margin-bottom: 50px;
+	margin-bottom: 4%;
 }
 
 .clearfix::after {
@@ -164,5 +196,4 @@ h1 {
 
   footer {
 	  text-align: center;
-	  width: 90%;
   }
