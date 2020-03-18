@@ -75,8 +75,6 @@ body {
 	margin: 0 8%;
 }
 
-
-
 .navigation {
 	height: 5%;
 	display: inline-block;
@@ -87,7 +85,7 @@ nav {
 	position: fixed;
 	width: 85%;
 	background: grey;
-	padding: 0;
+	padding: 0 1%;
 	border-radius: 10px;
 
 }
@@ -97,12 +95,13 @@ nav a {
 	color: white;
 	text-align: left;
 	display: inline-block;
-	height: 2%;	
+	height: 2%;
+	padding: 1% 0;	
+	
 }
 
 .nav-item {
 	width: 14%;
-	padding: 0 1%;
 }
 
 nav a:hover {
@@ -116,15 +115,20 @@ nav a:hover {
 	padding: 3% 0 3% 0;
 }
 
-
 .logo {
-	vertical-align: middle;	
+	float: right;	
 }
 
 header {
 	width: 100%;
 	display: inline-block;
 	text-align: center;
+}
+
+header div {
+	float: left;
+	padding: 7% 0px;
+	vertical-align: middle;
 }
 
 h1 {
@@ -136,15 +140,14 @@ h1 {
 }
 
 .headImg {
+	float: right;
 	background: url(../img/header-img.png);
 	background-repeat: no-repeat;
 	background-position: right;
-	vertical-align: middle;
-	display: inline-block;
+	vertical-align: top;
 	border-radius: 50%;
 	height: 500px;
 	width: 500px;
-	margin-left: 13%;
 }
 
 #btnStart {
