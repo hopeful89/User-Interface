@@ -54,7 +54,7 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Sen', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,7 +64,12 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-
+@keyframes navBar{
+	0%   {color: blue;}
+	25%  {color: black;}
+	50%  {color: purple;}
+	100% {color: pink}
+}
 
 body {
 	margin: 0 8%;
@@ -81,7 +86,7 @@ body {
 nav {
 	position: fixed;
 	width: 85%;
-	background: yellow;
+	background: grey;
 	padding: 0;
 	border-radius: 10px;
 
@@ -89,7 +94,7 @@ nav {
 
 nav a {
 	text-decoration: none;
-	color: grey;
+	color: white;
 	text-align: left;
 	display: inline-block;
 	height: 2%;	
@@ -97,10 +102,13 @@ nav a {
 
 .nav-item {
 	width: 14%;
+	padding: 0 1%;
 }
 
 nav a:hover {
-	color: red;
+	animation-name: navBar;
+	animation-duration: 2.5s;
+	color: pink;
 }
 
 .upperContent, .lowerContent {
@@ -177,7 +185,7 @@ h1 {
 }
 
 .lowerContent {
-	padding-top: 1%
+	padding-top: 1%;
 	text-align: left;
 	border-bottom: 1px solid black;
 }
@@ -198,7 +206,7 @@ h1 {
 	margin-bottom: 4%;
 }
 
-.clearfix::after {
+.clearfix:after {
 	content: "";
 	clear: both;
 	display: table;
