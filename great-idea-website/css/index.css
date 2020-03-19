@@ -54,7 +54,7 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Sen', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +64,157 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+@keyframes navBar{
+	0%   {color: blue;}
+	25%  {color: black;}
+	50%  {color: purple;}
+	100% {color: pink}
+}
+
+body {
+	margin: 0 8%;
+}
+
+.navigation {
+	height: 5%;
+	display: inline-block;
+	min-width: 300px;
+}
+
+nav {
+	position: fixed;
+	width: 85%;
+	background: grey;
+	padding: 0 1%;
+	border-radius: 10px;
+
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	text-align: left;
+	display: inline-block;
+	height: 2%;
+	padding: 1% 0;	
+	
+}
+
+.nav-item {
+	width: 14%;
+}
+
+nav a:hover {
+	animation-name: navBar;
+	animation-duration: 2.5s;
+	color: pink;
+}
+
+.upperContent, .lowerContent {
+	text-align: center;
+	padding: 3% 0 3% 0;
+}
+
+.logo {
+	float: right;	
+}
+
+header {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+header div {
+	float: left;
+	padding: 7% 0px;
+	vertical-align: middle;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 75px;
+	vertical-align: middle;
+	margin-left: 10%;
+	margin-top: 4%;
+}
+
+.headImg {
+	float: right;
+	background: url(../img/header-img.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	vertical-align: top;
+	border-radius: 50%;
+	height: 500px;
+	width: 500px;
+}
+
+#btnStart {
+	width: 150px;
+	background: white;
+	border: 1px solid black;
+	line-height: 1.6;
+	font-size: 16px;
+	
+}
+
+#btnStart:hover {
+	background: black;
+	color: white;
+}
+
+.upperContent {
+	padding-bottom: 1%;
+	margin-top: 2%;
+	border-top: 1px solid black;
+	text-align: left;
+}
+
+.upperContent div {
+	float: left;
+	width: 49%;
+	margin-bottom: 3%;
+}
+
+.middle-img{
+	background: url(../img/mid-page-accent.jpg);
+	background-size: cover;
+	vertical-align: middle;
+	display: inline-block;
+	height: 200px;
+	width: 100%;
+
+}
+
+.lowerContent {
+	padding-top: 1%;
+	text-align: left;
+	border-bottom: 1px solid black;
+}
+
+.lowerContent div{
+	float: left;
+	width: 33.33333%;
+	padding-right: 9px;
+	text-align: left;
+}
+
+.contactInfo {
+	text-align: left;
+	padding-top: 4%;
+}
+
+.contactInfo div {
+	margin-bottom: 4%;
+}
+
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+  footer {
+	  text-align: center;
+  }
